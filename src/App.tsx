@@ -91,14 +91,16 @@ export default function App() {
             </Typography>
           )}
           {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
-            <Button
-              size="large"
-              variant="contained"
-              color="primary"
-              onClick={startTrivia}
-            >
-              Start
-            </Button>
+            <Box m={2}>
+              <Button
+                size="large"
+                variant="contained"
+                color="primary"
+                onClick={startTrivia}
+              >
+                Start
+              </Button>
+            </Box>
           ) : null}
           {!gameOver && !loading && (
             <Paper variant="outlined">
